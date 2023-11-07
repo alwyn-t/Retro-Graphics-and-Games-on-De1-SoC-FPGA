@@ -1,7 +1,7 @@
-# ECE241-Project
+# ECE241 Project
 Final Project for ECE241: Digital Systems
 ## Resources
-Refer to [[ECE241 Project Link]]
+Refer to [[ECE241 Project Resources]]
 ## Project Description
 Refer to [[ECE241 Project Proposal]] for full description. 
 #### Games
