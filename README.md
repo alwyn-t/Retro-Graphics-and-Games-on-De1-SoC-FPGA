@@ -65,3 +65,10 @@ Went to the drop-in lab from 8am to 2pm
 ### Nov 9th
 Due to other commitments, I was not able to go to the drop-in lab
 - Completed more documentation on the [[ECE241 Project PS2 Input]]. I may add more information in the future, but I believe it's a good baseline and may be useful for other people in the future to read through and learn quickly how the PS2 keyboard inputs work.
+### Nov 10th
+Went to the drop-in lab from 3pm to 6:30pm
+- Implemented extension the PS2 input module by adding additional output registers to have a history of the keyboard inputs. I chose to have 3 output registers in total to be able to handle detecting the full break codes of the arrow keys.
+- Additionally, I added the parity bit check. Using modulus 2, I can compare it to the parity bit exactly when it is sent, if it does match the parity, I raise a flag so the next cycle (during the stop bit), I will not save the value. The goal of this was to avoid having false inputs (which I noticed when pressing a certain order of keys). 
+- I began another version of the VGA output (specifically the SVGA standard) to be able to produce higher quality output of 800 x 600 at 60hz. I plan to write up a full documentation on the process.
+- Created a template for a shader module, which will take in basic 1 bit RGB values or 4 bit RGB values and return an adjusted 8 bit RGB values to create a more visually pleasing output.
+- Created the pong game, currently runs on a 1hz clock for simplicity with many adjustable settings (speed of the ball, speed of the paddles, size of all objects). As of right now, the ball bounces off of all walls and the score of any player increases when hitting the paddle. I will change it when hitting the side walls, the ball is reset and the score is changed.
