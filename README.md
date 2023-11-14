@@ -72,3 +72,13 @@ Went to the drop-in lab from 3pm to 6:30pm
 - I began another version of the VGA output (specifically the SVGA standard) to be able to produce higher quality output of 800 x 600 at 60hz. I plan to write up a full documentation on the process.
 - Created a template for a shader module, which will take in basic 1 bit RGB values or 4 bit RGB values and return an adjusted 8 bit RGB values to create a more visually pleasing output.
 - Created the pong game, currently runs on a 1hz clock for simplicity with many adjustable settings (speed of the ball, speed of the paddles, size of all objects). As of right now, the ball bounces off of all walls and the score of any player increases when hitting the paddle. I will change it when hitting the side walls, the ball is reset and the score is changed.
+### Nov 11th
+Due to other commitments, I was not able to go to the drop-in lab
+### Nov 12th
+Due to other commitments, I was not able to go to the drop-in lab
+- Reviewed VGA controller and found that I forgot to wire the VGA_CLK, VGA_SYNC_N and VGA_BLANK_N. Because I was not able to go to the drop-in lab, I just compiled the new version and ensured there were no compilation errors so tomorrow I can quickly go to the lab and test the sof file.
+### Nov 13th
+Went to the drop-in lab from 11am to 1pm
+- Shifted the output of the pong controller to a more significant bit which resulted in a visible result. The pong game is currently bugged with the ball not loading into the correct position and all objects not being able to be moved further than 160 pixels from the top, but I should be able to solve these issues in the coming days.
+- I plan to continue investigating the VGA output as I don't believe the monitor centred the 800x600 frame, leaving pixels on the left and right not rendered. I may consider trying to get HD 1280x720 60Hz or HD 1920x1080 60Hz so I have a 16:9 screen ratio so the monitor may have a easier time to centre and align.
+- This will likely be the last daily update as last week was my reading week and therefore I am starting classes again. Although I believe I have most of the ground work completed, I don't think the next parts will take much additional work to get working as it is simply now about finishing the final product.

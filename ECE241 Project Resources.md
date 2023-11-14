@@ -2,6 +2,7 @@
 ## Useful Links
 [DE1-SoC Interfaces and Peripherals](https://class.ece.uw.edu/271/hauck2/de1/index.html)
 [PS/2 Controller](http://www-ug.eecg.utoronto.ca/desl/nios_devices_SoC/ARM/dev_ps2.html) [Alt link](http://www-ug.eecg.toronto.edu/msl/nios_devices/dev_ps2.html)
+[DESL documents](http://www-ug.eecg.toronto.edu/desl/)
 
 ## NES Controller
 [Pinout Guide](https://pinoutguide.com/Game/snescontroller_pinout.shtml)

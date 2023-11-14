@@ -1,10 +1,10 @@
 # ECE241 Project PS2 Input
 Investigation into PS/2 inputs
-## Information
+## Overview
 - PS/2 keyboard inputs run through a serial port where data is transferred as a bitstream through a data line and facilitated by a clock line.
 - Each key has an assigned make and may have a break code which indicates when a key is pressed (and held) and when a key is released. Some keys have unique behaviour but I will not speak much about those keys as they are not commonly used. You can find all the make / break codes below.
 For additional information on the exact topics discussed below, visit [PS/2 Controller](https://www.eecg.utoronto.ca/~jayar/ece241_08F/AudioVideoCores/ps2/ps2.html).
-### Bitstream
+## Bitstream
 The bitstream sends packets of information which can be uniquely identified by the controller / interface. There is 1 start bit, 8 data bits, 1 parity bit and 1 stop bit which adds to 11 bit packets.
 - A start bit is always a low and because the data line is held high when idle, this indicates the start of the bitstream. 
 - Next are the 8 data bits which can be the make/break code or part of it (as some make/break codes consist of more than 1 byte/8 bits). 
