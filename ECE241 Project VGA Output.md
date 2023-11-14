@@ -8,15 +8,21 @@ Deep dive into VGA protocol
 Unlike a lot of digital circuit communications, VGA utilizes voltage variation to allow for a wider range in colours without additional hardware. Specifically, the colour analogue data voltage ranges from 0 - 0.7V. Due to the data of each pixel being sent is sequentially, we can separate the logic for the sync signals (used to coordinate the displays) and the logic for the colours.
 Pixel data is sent line by line, each separated by a horizontal sync signal until the entire screen data has been sent, in which the vertical sync signal is sent to indicate a full frame has been transmitted. This structure is repeated for each frame is displayed. Additionally, before and after each sync signal, there is a front porch and back porch respectively which is required to be analog black because it is used as a reference for the RGB values.
 Below is 2 lines being sent with horizontal sync signals separating them
+
 [![Horizontal Sync Signals](https://web.mit.edu/6.111/www/labkit/images/vga_line.png)]
+
 Below is a vertical sync signal separating two different frames
+
 [![Vertical Sync Signal](https://web.mit.edu/6.111/www/labkit/images/vga_frame.png)]
+
 There are a few things to notice in these examples.
 1. Within the front porch and back porch, all colour analogue data lines are set to a normal black. While the colour values go to a lower voltage when a sync pulse is sent.
 2. When traversing the vertical sync pulse, colour values are inverted.
 Additional information can be found on [MIT Labkit VGA Video Output](https://web.mit.edu/6.111/www/labkit/vga.shtml).
 Another way to visualize the front porch, back porch, horizontal sync and vertical sync signals can be seen below in the various rectangular blocks.
+
 [![Project F Image of Data](https://projectf.io/img/posts/fpga-graphics/display-timings.png)]
+
 Additional information can be found on [Project F Beginning FPGA Graphics](https://projectf.io/posts/fpga-graphics/).
 To assist with mapping digital to analogue signals (bits to voltage), FPGAs are often equipped with a VGA DAC (digital to analogue converter). Some can take up to 10 bits of colour data for each RGB value. Please refer to your FPGA board for VGA DAC specifications. For example, for the DE1-SoC FPGA board, the user manual which includes the specific VGA DAC can be found on [terasIC DE1-SoC Board Resources](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=167&No=836&PartNo=4#contents). On the DE1-SoC FPGA board, the appropriate sync and blank colour analogues are also taken into account, so I do not have to manually set the digital colour values to normal black.
 ## Resolution and Refresh Rates

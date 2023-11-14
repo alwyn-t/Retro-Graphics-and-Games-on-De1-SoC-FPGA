@@ -10,8 +10,11 @@ The bitstream sends packets of information which can be uniquely identified by t
 - Next are the 8 data bits which can be the make/break code or part of it (as some make/break codes consist of more than 1 byte/8 bits). 
 - Next is the parity bit (odd parity) which represents the number of 1s in the data bits and the parity bit itself must be an odd number. This parity bit provides some error protection if your system requires it. 
 - Finally, we have the stop bit which is always high and indicates the end of the bitstream so the controller / interface can verify the length of the bitstream.
+
 Below is an image of the bitstream
+
 [![Bitstream](http://www-ug.eecg.utoronto.ca/desl/nios_devices_SoC/ARM/datasheets/PS2%20Protocol_files/waveform1.jpg)]
+
 For additional information, visit [Computer Engineering PS/2 Mouse/Keyboard Protocol](http://www-ug.eecg.utoronto.ca/desl/nios_devices_SoC/ARM/datasheets/PS2%20Protocol.htm).
 ## Make and Break Codes
 Each key is assigned a make code which can consist of one or more bytes of data. For many keys, it's a single byte but for some keys, there is an extension byte (E0) which is added to some keys. For example, the 'Home' key is E06C because on the numpad, the '7' key is 6C and the num lock key would typically switch the '7' key to be the 'Home' key. The same thing occurs for the arrow keys.
@@ -22,7 +25,9 @@ Below are a list of compiled lists containing make / break codes
 - [Altium Website Scan Codes](https://techdocs.altium.com/display/FPGA/PS2+Keyboard+Scan+Codes) - Site takes quite some time to load
 
 Below is an image which provides more of a visual display of the make codes
+
 [![PS/2 Scan Codes](https://www.eecg.utoronto.ca/~jayar/ece241_08F/AudioVideoCores/ps2/img/keycodes.png)]
+
 ## Implementations
 There are various ways to create a controller which can interface with the keyboard. After research, I've found solutions using finite state machines (FSMs) and using negative edge clocks from the keyboard itself. I did reference my experience in the [[README]], but I found using the negative edge clocks more intuitive and easier to debug (I spent over 6 hours trying to get the FSM to work but without success while the negative edge clock took me less then 2 hours to get working).
 ### Finite State Machine Solution
