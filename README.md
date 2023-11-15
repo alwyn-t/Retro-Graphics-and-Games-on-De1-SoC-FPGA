@@ -82,3 +82,9 @@ Went to the drop-in lab from 11am to 1pm
 - Shifted the output of the pong controller to a more significant bit which resulted in a visible result. The pong game is currently bugged with the ball not loading into the correct position and all objects not being able to be moved further than 160 pixels from the top, but I should be able to solve these issues in the coming days.
 - I plan to continue investigating the VGA output as I don't believe the monitor centred the 800x600 frame, leaving pixels on the left and right not rendered. I may consider trying to get HD 1280x720 60Hz or HD 1920x1080 60Hz so I have a 16:9 screen ratio so the monitor may have a easier time to centre and align.
 - This will likely be the last daily update as last week was my reading week and therefore I am starting classes again. Although I believe I have most of the ground work completed, I don't think the next parts will take much additional work to get working as it is simply now about finishing the final product.
+### Nov 14th
+Went to the drop-in lab from 3pm - 5pm
+- Restructured code to have a 60Hz clock module, a pong game module (which handles all the logic and output) and a pong video module. This should make future additions such as the jump game easier to implement.
+- I began work on a double buffer implementation, but due to the limitations of the DE1-SoC FPGA board, I am current unaware of any ram module which can store enough values except for manually instantiating registers.
+- Continue to debug an issue with the PS/2 keyboard, where some seemingly random keys will trigger my custom key pressed flags even when they are not the same key.
+- Additionally, began work on assets for the games to make the visual representation a bit more pleasant. 
