@@ -88,3 +88,7 @@ Went to the drop-in lab from 3pm - 5pm
 - I began work on a double buffer implementation, but due to the limitations of the DE1-SoC FPGA board, I am current unaware of any ram module which can store enough values except for manually instantiating registers.
 - Continue to debug an issue with the PS/2 keyboard, where some seemingly random keys will trigger my custom key pressed flags even when they are not the same key.
 - Additionally, began work on assets for the games to make the visual representation a bit more pleasant. 
+### Nov 15th
+Went to the drop-in lab from 11am - noon and 3pm - 5pm
+- Added score display based on my hex_decoder, but modified to it can handle 2 digit decimal numbers. Moreover, I made it so the scores rest centred on the centre line and therefore the right score shifts to the right when turning for a single digit to double digits.
+- Updated the order in which keys are read. For the past week, I have been trying to debug my keyboard input and was unsuccessful even though the bytes being picked up by the FPGA were accurate. I'm still not quite sure as to what caused the issue, but the fix was to load in the data into the shift registers when checking the parity data and then raising a newKey flag on the next cycle so other modules can do their key checks. Prior, I had some inconsistent behaviour, where some keys would be flagged as being pressed by other keys.
