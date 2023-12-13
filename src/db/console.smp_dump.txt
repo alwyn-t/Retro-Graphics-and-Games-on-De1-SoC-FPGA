@@ -1,0 +1,39 @@
+
+State Machine - |console|DinoGame:dinoGame|DinoController:dinoController|nextState
+Name nextState.PAUSE_MENU nextState.END_CHECK nextState.GAME nextState.START_MENU nextState.END_MENU 
+nextState.START_MENU 0 0 0 0 0 
+nextState.GAME 0 0 1 1 0 
+nextState.END_CHECK 0 1 0 1 0 
+nextState.PAUSE_MENU 1 0 0 1 0 
+nextState.END_MENU 0 0 0 1 1 
+
+State Machine - |console|DinoGame:dinoGame|DinoController:dinoController|currentState
+Name currentState.PAUSE_MENU currentState.END_CHECK currentState.GAME currentState.START_MENU currentState.END_MENU 
+currentState.START_MENU 0 0 0 0 0 
+currentState.GAME 0 0 1 1 0 
+currentState.END_CHECK 0 1 0 1 0 
+currentState.PAUSE_MENU 1 0 0 1 0 
+currentState.END_MENU 0 0 0 1 1 
+
+State Machine - |console|PongGame:pongGame|PongController:controller|nextState
+Name nextState.END_MENU nextState.PAUSE_MENU nextState.GAME nextState.START_MENU 
+nextState.START_MENU 0 0 0 0 
+nextState.GAME 0 0 1 1 
+nextState.PAUSE_MENU 0 1 0 1 
+nextState.END_MENU 1 0 0 1 
+
+State Machine - |console|PongGame:pongGame|PongController:controller|currentState
+Name currentState.END_MENU currentState.PAUSE_MENU currentState.GAME currentState.START_MENU 
+currentState.START_MENU 0 0 0 0 
+currentState.GAME 0 0 1 1 
+currentState.PAUSE_MENU 0 1 0 1 
+currentState.END_MENU 1 0 0 1 
+
+State Machine - |console|GameSelect:gameSelect|currentState
+Name currentState.INGAME_DINO currentState.LOAD_DINO currentState.HOVER_DINO currentState.INGAME_PONG currentState.LOAD_PONG currentState.HOVER_PONG 
+currentState.HOVER_PONG 0 0 0 0 0 0 
+currentState.LOAD_PONG 0 0 0 0 1 1 
+currentState.INGAME_PONG 0 0 0 1 0 1 
+currentState.HOVER_DINO 0 0 1 0 0 1 
+currentState.LOAD_DINO 0 1 0 0 0 1 
+currentState.INGAME_DINO 1 0 0 0 0 1 

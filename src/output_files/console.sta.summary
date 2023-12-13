@@ -1,0 +1,245 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -51.302
+TNS   : -27692.072
+
+Type  : Slow 1100mV 85C Model Setup 'PS2:keyboard|PS2_Input:ps2in|newKey'
+Slack : -10.580
+TNS   : -71.455
+
+Type  : Slow 1100mV 85C Model Setup 'VGA:display|eNewFrame'
+Slack : -9.213
+TNS   : -1940.772
+
+Type  : Slow 1100mV 85C Model Setup 'PS2_CLK'
+Slack : -5.891
+TNS   : -143.488
+
+Type  : Slow 1100mV 85C Model Hold 'PS2_CLK'
+Slack : 0.219
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'VGA:display|eNewFrame'
+Slack : 0.419
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'PS2:keyboard|PS2_Input:ps2in|newKey'
+Slack : 0.580
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'VGA:display|eNewFrame'
+Slack : -2.225
+TNS   : -258.880
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'PS2_CLK'
+Slack : -0.394
+TNS   : -26.819
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'PS2:keyboard|PS2_Input:ps2in|newKey'
+Slack : -0.394
+TNS   : -3.947
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'SW[9]'
+Slack : 0.241
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 0.367
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.900
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 11.274
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -53.518
+TNS   : -27421.373
+
+Type  : Slow 1100mV 0C Model Setup 'PS2:keyboard|PS2_Input:ps2in|newKey'
+Slack : -10.440
+TNS   : -70.628
+
+Type  : Slow 1100mV 0C Model Setup 'VGA:display|eNewFrame'
+Slack : -9.358
+TNS   : -1892.104
+
+Type  : Slow 1100mV 0C Model Setup 'PS2_CLK'
+Slack : -5.894
+TNS   : -139.139
+
+Type  : Slow 1100mV 0C Model Hold 'PS2_CLK'
+Slack : 0.283
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'VGA:display|eNewFrame'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.394
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'PS2:keyboard|PS2_Input:ps2in|newKey'
+Slack : 0.554
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'VGA:display|eNewFrame'
+Slack : -2.225
+TNS   : -259.849
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'PS2_CLK'
+Slack : -0.394
+TNS   : -25.171
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'PS2:keyboard|PS2_Input:ps2in|newKey'
+Slack : -0.394
+TNS   : -3.889
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'SW[9]'
+Slack : 0.231
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 0.367
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.926
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 11.254
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -25.293
+TNS   : -16032.833
+
+Type  : Fast 1100mV 85C Model Setup 'PS2:keyboard|PS2_Input:ps2in|newKey'
+Slack : -6.196
+TNS   : -41.878
+
+Type  : Fast 1100mV 85C Model Setup 'VGA:display|eNewFrame'
+Slack : -4.875
+TNS   : -1086.241
+
+Type  : Fast 1100mV 85C Model Setup 'PS2_CLK'
+Slack : -2.919
+TNS   : -64.648
+
+Type  : Fast 1100mV 85C Model Hold 'VGA:display|eNewFrame'
+Slack : 0.056
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'PS2_CLK'
+Slack : 0.139
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.211
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'PS2:keyboard|PS2_Input:ps2in|newKey'
+Slack : 0.308
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'VGA:display|eNewFrame'
+Slack : -1.702
+TNS   : -51.234
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'PS2_CLK'
+Slack : -0.386
+TNS   : -14.802
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'PS2:keyboard|PS2_Input:ps2in|newKey'
+Slack : 0.015
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'SW[9]'
+Slack : 0.025
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 0.367
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.643
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 11.389
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -23.750
+TNS   : -14088.460
+
+Type  : Fast 1100mV 0C Model Setup 'PS2:keyboard|PS2_Input:ps2in|newKey'
+Slack : -5.970
+TNS   : -40.480
+
+Type  : Fast 1100mV 0C Model Setup 'VGA:display|eNewFrame'
+Slack : -4.464
+TNS   : -949.241
+
+Type  : Fast 1100mV 0C Model Setup 'PS2_CLK'
+Slack : -2.806
+TNS   : -54.925
+
+Type  : Fast 1100mV 0C Model Hold 'VGA:display|eNewFrame'
+Slack : 0.068
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'PS2_CLK'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.200
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'PS2:keyboard|PS2_Input:ps2in|newKey'
+Slack : 0.277
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'VGA:display|eNewFrame'
+Slack : -1.702
+TNS   : -40.488
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'PS2_CLK'
+Slack : -0.409
+TNS   : -15.357
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'SW[9]'
+Slack : 0.019
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'PS2:keyboard|PS2_Input:ps2in|newKey'
+Slack : 0.047
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pll|pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 0.367
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.632
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pll|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 11.388
+TNS   : 0.000
+
+------------------------------------------------------------

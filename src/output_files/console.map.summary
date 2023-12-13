@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Tue Dec 05 01:49:10 2023
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : console
+Top-level Entity Name : console
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 409
+Total pins : 98
+Total virtual pins : 0
+Total block memory bits : 532,480
+Total DSP Blocks : 3
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1
+Total DLLs : 0

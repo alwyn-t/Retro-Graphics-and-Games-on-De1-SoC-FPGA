@@ -1,0 +1,259 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dW:/ECE241/project/console_bypass_sdram
+vDinoGame
+Z1 !s110 1701359622
+!i10b 1
+!s100 `8?5EC<D4=1Rz0<Qh9H<z2
+InLio9og4gQ1Uk;WC?cI0b0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1701319926
+8DinoGame.v
+FDinoGame.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1701359622.000000
+Z5 !s107 VGA.v|Utility.v|sdram_controller.v|Randomizer.v|PS2.v|PongVideo.v|PongGame.v|PongController.v|HexDecoder.v|DinoVideo.v|DinoGame.v|
+Z6 !s90 -reportprogress|300|DinoGame.v|DinoVideo.v|HexDecoder.v|PongController.v|PongGame.v|PongVideo.v|PS2.v|Randomizer.v|sdram_controller.v|Utility.v|VGA.v|
+!i113 1
+Z7 tCvgOpt 0
+n@dino@game
+vDinoVideo
+R1
+!i10b 1
+!s100 zZ=Ti`860nM7@;o[OJ;L61
+IU4k`]=ePZ_G2AUG9g]=g30
+R2
+R0
+w1701359517
+8DinoVideo.v
+FDinoVideo.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@dino@video
+vhex_decoder
+R1
+!i10b 1
+!s100 7TBg711M94?F]TIHOhZ0<3
+IQ3oaBkDc?CKm0Z157iH2[0
+R2
+R0
+w1701144424
+8HexDecoder.v
+FHexDecoder.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+voverlap
+Z8 !s110 1701359623
+!i10b 1
+!s100 4dj:OdWiTj01<;B;N]i921
+I_Q2<FLAbeB_ZlQkEQhUk_2
+R2
+R0
+w1700083416
+8Utility.v
+FUtility.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+vPongController
+R1
+!i10b 1
+!s100 WUHEacCJMaYnSK_gmzAR21
+IDhDc9jUR7o6c?8h4:O_3B3
+R2
+R0
+w1701359620
+8PongController.v
+FPongController.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@pong@controller
+vPongGame
+R8
+!i10b 1
+!s100 MajCY=IA9Y[TgG8d8kd`N3
+I;^@S]57mB^jA`WQ4IRYD02
+R2
+R0
+w1701229961
+8PongGame.v
+FPongGame.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@pong@game
+vPongVideo
+R8
+!i10b 1
+!s100 B4><<gM0Zi6bf1CKoXU1g3
+IEBfFCS]AKL8:_S3_O40:=2
+R2
+R0
+w1701355360
+8PongVideo.v
+FPongVideo.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@pong@video
+vPS2
+R8
+!i10b 1
+!s100 JlWQB6cok[hia;NBC<=]P0
+IfoENeDZ3TEZ4=?mmcD_7Q2
+R2
+R0
+Z9 w1701228263
+Z10 8PS2.v
+Z11 FPS2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@p@s2
+vPS2_Input
+R8
+!i10b 1
+!s100 2KZDOgjQ>Z`ChTc7DDD2@3
+I0A@@7K]aB4UiS]R[DKcm`0
+R2
+R0
+R9
+R10
+R11
+L0 75
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@p@s2_@input
+vRandomizer
+R8
+!i10b 1
+!s100 Hz>n3h]Mi^GlQ;4S4_a9k0
+IRPGMn8Z]0TT_[heG5R3bR1
+R2
+R0
+w1700243744
+8Randomizer.v
+FRandomizer.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@randomizer
+vsdram_controller
+R8
+!i10b 1
+!s100 9e1XH:b29;1Io369kzW]C0
+I`Hg9zJe^[:ZMhPoToJm<O3
+R2
+R0
+w1700857026
+8sdram_controller.v
+Fsdram_controller.v
+L0 25
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+vVGA
+R8
+!i10b 1
+!s100 U`Z35H83bJJFY:1Aaehcl1
+I;ZPKc1QPGF26F38ChB7Eo2
+R2
+R0
+w1701146034
+8VGA.v
+FVGA.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@v@g@a
