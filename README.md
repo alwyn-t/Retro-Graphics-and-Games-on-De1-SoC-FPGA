@@ -6,7 +6,7 @@ Originally, this project was started as my final project for `ECE241: Digital Sy
 Refer to [[ECE241 Project Resources]]
 PS/2 Input - [[PS2 Input Protocol]]~~
 ## Project Components
-This project has quite a few components that work either independently or dependently to create a coherent structured system. This version includes 2 games, pong and dino and a game selection screen, each with unique technology to support them. To see an overview, check out the [High Level Block Diagram](README.md#High-Level%20Block%20Diagram).
+This project has quite a few components that work either independently or dependently to create a coherent structured system. This version includes 2 games, pong and dino and a game selection screen, each with unique technology to support them. To see an overview, check out the [High Level Block Diagram](#High-Level-Block-Diagram).
 ## Pong
 The classic retro game, originally released by Atari, was the first game I recreated. I created a PS2 Keyboard controller to achieve simultaneous inputs, a hardware based physics engine and a hex decoder based score display.
 ### PS2 Controller
@@ -18,7 +18,7 @@ Utilized a previously created hex decoder as a basis to create a score display c
 ## Dino
 Based on the `Dinosaur Game` by Google, was the second game I recreated. To give a more in depth gaming experience, I created more advance modules, including an advanced physics engine, a unique hit box detection, an entity system, a randomizer and a sprite renderer.
 ### Advanced Physics Engine
-Based on the [Pong Physics Engine](README.md#Hardware-Based%20Physics%20Engine), with gravity acceleration and variable jump height based on how long the jump button is held. This process used slow falling, normal falling and stop velocities which are based on the true velocity and are held in wires. The true velocity is updated every frame dynamically, based on the jump duration, whether the jump button is held and whether the player is on the ground. All while the y position of the player is updated using the true velocity. Additionally, all velocities were offset between -128 to 127 to avoid error calculations.
+Based on the [Pong Physics Engine](#Hardware-Based-Physics-Engine), with gravity acceleration and variable jump height based on how long the jump button is held. This process used slow falling, normal falling and stop velocities which are based on the true velocity and are held in wires. The true velocity is updated every frame dynamically, based on the jump duration, whether the jump button is held and whether the player is on the ground. All while the y position of the player is updated using the true velocity. Additionally, all velocities were offset between -128 to 127 to avoid error calculations.
 ### Hit Box Detection
 Due to the cactus having various heights and being thin, and the bird being thin height wise, I used custom hit boxes to better represent the entities. The cactus hit boxes are based on their height and thinner than the width of their sprite and the bird hit boxes have a thinner height dimension.
 ### Entity System
@@ -32,7 +32,7 @@ The game selection screen served as a way to switch between each game and show a
 ### Finite State Machines
 One FSM is wrapped around each game and one additional FSM is used for the switching. For pong, the FSM has `start`, `game`, `pause` and `end`, while for dino, the FSM has a special `end_check` state which ensures that if you die while jumping, the game will wait for the space bar to be released before restarting. Game select is the overarching FSM which has `hover`, `load` and `ingame` for each game. When in `hover`, both games are disabled and the game select video controller is pushed through, while when `ingame`, the respective game video controller will be routed. Additionally, when going back to the game select screen, the game is paused and saved so when you re-enter, you don't lose progress.
 ### ASCII Characters
-This is an extension of the [Dino Sprite Renderer](README.md#Sprites%20Renderer) but dedicated to a different format, I store 8x16 character sprites with 1 byte for each row as binary on/off. This binary format allows for easy recolouring using the switches to set the background or the text colour. `SW9` used to switch between background or text colour and `SW0` - `SW8` is used to set the RGB values.
+This is an extension of the [Dino Sprite Renderer](#Sprites-Renderer) but dedicated to a different format, I store 8x16 character sprites with 1 byte for each row as binary on/off. This binary format allows for easy recolouring using the switches to set the background or the text colour. `SW9` used to switch between background or text colour and `SW0` - `SW8` is used to set the RGB values.
 
 ## Display Output
 To facilitate displaying the content from the video controllers, I implemented the SVGA standard and a video buffer (broken down into the SDRAM controller and FIFO controller) to ensure clean output.
