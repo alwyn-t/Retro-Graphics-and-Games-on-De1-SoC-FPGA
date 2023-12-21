@@ -2,11 +2,19 @@
 Final project turned into a passion project focused on simulating retro style games using unique hardware architecture on the De1-SoC board.
 Originally, this project was started as my final project for `ECE241: Digital Systems` course at UofT, but I saw an opportunity to push my knowledge and use my research skills to be able to develop this project further. The original project proposal can be found on the [ECE241 Project Proposal Page](ECE241%20Project%20Proposal.md).
 ## Resources
-~~Below has some complex concepts, to read more please refer to below
-Refer to [[ECE241 Project Resources]]
-PS/2 Input - [[PS2 Input Protocol]]~~
+There are some complex concepts and hardware specifics that are talked about in this page, it is recommended that you know about some hardware design or game design before tackling this project. For some resources, please refer to the [Additional Resources Page](Additional%20Resources.md).
+A full list of the documents are as follows:
+[README](README.md)
+[ECE241 Project Proposal](ECE241%20Project%20Proposal.md)
+[Additional Resources](Additional%20Resources.md)
+[Menu and Game Descriptions](Menu%20and%20Game%20Descriptions.md)
+[PS2 Input Protocol](PS2%20Input%20Protocol.md)
+[SVGA Protocol](SVGA%20Protocol.md)
+[SDRAM Protocol](SDRAM%20Protocol.md)
+[Video Buffering and FIFO](Video%20Buffering%20and%20FIFO.md)
+[MIF Scripts](MIF%20Scripts.md)
 ## Project Components
-This project has quite a few components that work either independently or dependently to create a coherent structured system. This version includes 2 games, pong and dino and a game selection screen, each with unique technology to support them. To see an overview, check out the [High Level Block Diagram](#High-Level-Block-Diagram).
+This project has quite a few components that work either independently or dependently to create a coherent structured system. This version includes 2 games, pong and dino and a game selection screen, each with unique technology to support them. To see an overview, check out the [High Level Block Diagram](#High-Level-Block-Diagram), to learn more details, check out the [Menu and Game Descriptions Page](Menu%20and%20Game%20Descriptions.md).
 ## Pong
 The classic retro game, originally released by Atari, was the first game I recreated. I created a PS2 Keyboard controller to achieve simultaneous inputs, a hardware based physics engine and a hex decoder based score display.
 ### PS2 Controller
@@ -39,9 +47,9 @@ To facilitate displaying the content from the video controllers, I implemented t
 ### SVGA Controller
 Rather than the typical VGA standard, I implemented 800 x 600 60Hz SVGA standard with a custom adapter. The main difference is it requires a 40MHz clock (achieved with a PLL) and unique timings. Additional information can be found on the [SVGA Protocol Page](SVGA%20Protocol.md).
 ### SDRAM Controller
-This controller is responsible for read and writing to the SDRAM. I had lots of troubles but it ended up being the clock of the SDRAM needed to be shifted to ensure all data/signal lines were stable before the SDRAM reads them. My implementation runs the SDRAM chip at the max clock rate of 200MHz.
+This controller is responsible for read and writing to the SDRAM. I had lots of troubles but it ended up being the clock of the SDRAM needed to be shifted to ensure all data/signal lines were stable before the SDRAM reads them. My implementation runs the SDRAM chip at the max clock rate of 200MHz. Additional information can be found on the [SDRAM Protocol Page](SDRAM%20Protocol.md).
 ### FIFO Controller
-The FIFO controller works in conjunction with the SDRAM controller and acts like a smaller buffer. Because the SDRAM takes a few cycles to read or write, I needed to pre-read data before it was needed by my display module. I ended up with a cool module which has two cursors, one is reading out of the FIFO buffer and one is writing into the buffer with data from the SDRAM. The cursor writing continuously tries to read from the SDRAM and writes in as long as the reading cursor is ahead. While the reading cursor takes from the buffer whenever the display module needs it. This ends up causing two different clocks to work on the same register memory space without conflict. Additionally, I modified the pong and dino video controllers to only send pixels that need to be updated. This requires storing the last position of the entities that are moving but ensures that whenever an entity moves, the new position can be drawn and the old position can be erased.
+The FIFO controller works in conjunction with the SDRAM controller and acts like a smaller buffer. Because the SDRAM takes a few cycles to read or write, I needed to pre-read data before it was needed by my display module. I ended up with a cool module which has two cursors, one is reading out of the FIFO buffer and one is writing into the buffer with data from the SDRAM. The cursor writing continuously tries to read from the SDRAM and writes in as long as the reading cursor is ahead. While the reading cursor takes from the buffer whenever the display module needs it. This ends up causing two different clocks to work on the same register memory space without conflict. Additionally, I modified the pong and dino video controllers to only send pixels that need to be updated. This requires storing the last position of the entities that are moving but ensures that whenever an entity moves, the new position can be drawn and the old position can be erased. Additional information can be found on the [Video Buffering and FIFO Page](Video%20Buffering%20and%20FIFO.md).
 
 ## High-Level Block Diagram
 ```mermaid
@@ -161,3 +169,13 @@ Went to the drop-in lab from 11am - noon and 3pm - 5pm
 Went to the drop-in lab from 3pm - 6:30pm
 - After over a week of research, testing and debugging, I have finally created a proof build of a SDRAM controller. I learned that the memory IP that the labs suggested uses block memory which uses the transistors of the FPGA board itself to create memory cells. This solution does not provide sufficient space for a full video buffer and therefore I looked to other sources of storage. Eventually, I found SDRAM and DDR3 ram which took me down a long rabbit hole of trying to find the appropriate information to be able to build an appropriate controller. Due to the complexity and lack of feedback from the system, I had troubles figuring out a valid implementation. To learn more, please look at the [[SDRAM Protocol]] document.
 - With the SDRAM controller, I am now able to work on the FIFO module and video buffer itself. I plan to work on this over the weekend so by Monday, I have move on to the other games I need to finish.
+### Dec 5th
+In class presentation
+* The in class presentation went well as the TAs and my professor were quite impressed with my final product. I would like to say that the project was a great deal of work but it was rewarding to have a complete project quite is worthy of being on my portfolio. 
+### Dec 12th
+Mid-Overhaul
+* As part of my goal of adding this project to my portfolio, I have started to document all of my work and the various different components of my project. Including renaming some of the markdown files and adding the source files for my project.
+### Dec 20th
+Overhaul
+* Now that exams have finished I am also wrapping up the reworking of the project documentation. 
+* I have also done some reflection on my project. After speaking with other friends in my class, it seems that my project was plenty sufficient to get 100%. Although it seems that I may have over delivered, I appreciate that the openness of the project encouraged me to push my research and development skills and in the end, I created a cool project. I hope this documentation will provide some benefit to future ECE241 students or to any other hackers.
